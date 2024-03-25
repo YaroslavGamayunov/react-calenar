@@ -1,0 +1,38 @@
+.calendar-container {
+  margin-bottom: 20px;
+  width: fit-content;
+}
+
+.calendar-weekdays,
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  gap: 0; 
+}
+
+.calendar-weekday,
+.calendar-day {
+  width: 50px; 
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.calendar-weekday {
+  font-weight: bold;
+  background-color: #bb4d4d91;
+}
+
+.calendar-day {
+  background-color: #fff;
+}
+
+.calendar-day.empty {
+  background-color: transparent;
+  border: none;
+}
+
+.calendar-day.today {
+  border: 2px solid red;
+}
